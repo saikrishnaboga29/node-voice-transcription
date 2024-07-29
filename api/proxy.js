@@ -22,7 +22,7 @@ app.post('/api/proxy', upload.single('file'), async (req, res) => {
     
     const file = req.file;
     console.log('File:', file);
-    
+
     const url = 'https://api.cloudflare.com/client/v4/accounts/efb0ac3a4fb32de98af9abed9246efa6/ai/run/@cf/openai/whisper';
     const token = '9MlLEHQGYWmpQLN-mHiEn9-WLKphbaK-mi00NQC1';
 
